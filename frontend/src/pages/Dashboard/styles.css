@@ -1,0 +1,77 @@
+ul.spot-list {
+  width: 100%;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+ul.spot-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.spot-list li header {
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+ul.spot-list li strong {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #444;
+}
+
+ul.spot-list li span {
+  font-size: 15px;
+  color: #999;
+}
+
+ul.notifications {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+ul.notifications li {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul.notifications li button {
+  margin-right: 10px;
+  border: 0;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+ul.notifications li button.accept {
+  color: #ffff;
+  background-color: rgb(132, 200, 96);
+  border: solid 2px #84c860;
+  padding: 4px;
+}
+
+ul.notifications li button.reject {
+  color: #e55e5e;
+  background-color: #ffffff;
+  border: solid 2px #e55e5e;
+  padding: 4px;
+
+  will-change: background border color;
+}
+
+ul.notifications li button.accept:hover {
+  background-color: rgb(101, 155, 73);
+  border-color: rgb(101, 155, 73);
+  transition: all ease 0.5s;
+}
+
+ul.notifications li button.reject:hover {
+  color: #ffffff;
+  background-color: #e55e5e;
+  transition: all ease 0.5s;
+}
